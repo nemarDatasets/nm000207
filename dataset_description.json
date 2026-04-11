@@ -1,5 +1,5 @@
 {
-  "Name": "Kojima et al. 2024 (Dataset B) — Auditory BCI P300 dataset",
+  "Name": "Kojima et al. 2024 (Dataset B) — Four-class ASME BCI: investigation of the feasibility and comparison of two strategies for multiclassing",
   "BIDSVersion": "1.9.0",
   "HEDVersion": "8.4.0",
   "DatasetType": "derivative",
