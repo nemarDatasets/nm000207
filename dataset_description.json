@@ -1,45 +1,45 @@
 {
-	"Name": "Class for Kojima2024B dataset management. P300 dataset",
-	"BIDSVersion": "1.9.0",
-	"HEDVersion": "8.4.0",
-	"DatasetType": "derivative",
-	"License": "CC0-1.0",
-	"Authors": [
-		"Simon Kojima",
-		"Shin'ichiro Kanoh"
-	],
-	"Funding": [
-		"JSPS KAKENHI (Grant Number JP23K11811 to Shin'ichiro Kanoh)"
-	],
-	"EthicsApprovals": [
-		"Review Board on Bioengineering Research Ethics of the Shibaura Institute of Technology"
-	],
-	"ReferencesAndLinks": [
-		"https://doi.org/10.7910/DVN/1UJDV6",
-		"10.3389/fnhum.2024.1461960"
-	],
-	"GeneratedBy": [
-		{
-			"CodeURL": "https://github.com/NeuroTechX/moabb",
-			"Name": "moabb",
-			"Description": "Mother of All BCI Benchmarks",
-			"Version": "1.5.0"
-		}
-	],
-	"SourceDatasets": [
-		{
-			"DOI": "10.7910/DVN/1UJDV6",
-			"URL": "https://doi.org/10.7910/DVN/1UJDV6"
-		}
-	],
-	"Keywords": [
-		"brain-computer interface",
-		"electroencephalogram",
-		"event-related potential",
-		"auditory scene analysis",
-		"stream segregation",
-		"machine learning",
-		"NASA-TLX"
-	],
-	"PublicationYear": 2024
+  "Name": "Kojima et al. 2024 (Dataset B) — Auditory BCI P300 dataset",
+  "BIDSVersion": "1.9.0",
+  "HEDVersion": "8.4.0",
+  "DatasetType": "derivative",
+  "License": "CC0-1.0",
+  "Authors": [
+    "Simon Kojima",
+    "Shin'ichiro Kanoh"
+  ],
+  "Funding": [
+    "JSPS KAKENHI (Grant Number JP23K11811 to Shin'ichiro Kanoh)"
+  ],
+  "EthicsApprovals": [
+    "Review Board on Bioengineering Research Ethics of the Shibaura Institute of Technology"
+  ],
+  "ReferencesAndLinks": [
+    "https://doi.org/10.7910/DVN/1UJDV6",
+    "10.3389/fnhum.2024.1461960"
+  ],
+  "GeneratedBy": [
+    {
+      "CodeURL": "https://github.com/NeuroTechX/moabb",
+      "Name": "moabb",
+      "Description": "Mother of All BCI Benchmarks",
+      "Version": "1.5.0"
+    }
+  ],
+  "SourceDatasets": [
+    {
+      "DOI": "10.7910/DVN/1UJDV6",
+      "URL": "https://doi.org/10.7910/DVN/1UJDV6"
+    }
+  ],
+  "Keywords": [
+    "brain-computer interface",
+    "electroencephalogram",
+    "event-related potential",
+    "auditory scene analysis",
+    "stream segregation",
+    "machine learning",
+    "NASA-TLX"
+  ],
+  "PublicationYear": 2024
 }
