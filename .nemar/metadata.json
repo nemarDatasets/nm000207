@@ -1,10 +1,43 @@
 {
   "version": "2.0",
   "pipeline_stage": "validated",
+  "title": "Kojima et al. 2024 (Dataset B) — Four-class ASME BCI: investigation of the feasibility and comparison of two strategies for multiclassing",
+  "description": "This dataset comprises EEG recordings from 15 healthy subjects performing an auditory brain-computer interface task based on the ASME (Auditory Stream segregation Multiclass ERP) paradigm. The study investigates two strategies for achieving four-class classification: ASME-4stream (four independent streams with single target stimuli) and ASME-2stream (two streams with dual target stimuli each). EEG data were recorded at 1000 Hz from 64 channels during 12 runs per subject, with offline analysis including event-related potential characterization, binary classification, and BCI simulation using linear discriminant analysis.",
+  "methods_description": "EEG was recorded at 1000 Hz from 64 channels (64 EEG + 2 EOG) using a BrainAmp system with EasyCap electrodes referenced to the right mastoid. Subjects performed 12 runs alternating between ASME-4stream (4 streams, SOA=150ms, 600 stimuli/trial) and ASME-2stream (2 streams, SOA=300ms, 300 stimuli/trial) paradigms. Preprocessing included ICA-based artifact removal (15 components), bandpass filtering (1-40 Hz for ERP analysis, 0.1-8 Hz for classification), epoching (-0.1 to 1.2s), and downsampling to 250 Hz. Classification employed shrinkage-LDA with mean amplitudes from 10 non-overlapping intervals (0-1.0s) as features, evaluated via 4-fold chronological cross-validation.",
+  "license": "CC0-1.0",
+  "dataset_type": "derivative",
   "authors": {
     "Simon Kojima": {},
     "Shin'ichiro Kanoh": {}
   },
+  "keywords": [
+    {
+      "term": "Brain-Computer Interfaces",
+      "subject_scheme": "MeSH",
+      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
+    },
+    {
+      "term": "Electroencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
+    },
+    {
+      "term": "event-related potentials"
+    },
+    {
+      "term": "auditory scene analysis"
+    },
+    {
+      "term": "stream segregation"
+    },
+    {
+      "term": "P300"
+    },
+    {
+      "term": "machine learning"
+    }
+  ],
   "related_identifiers": [
     {
       "identifier": "10.7910/DVN/1UJDV6",
@@ -43,14 +76,11 @@
       "award_number": "JP23K11811"
     }
   ],
-  "title": "Kojima et al. 2024 (Dataset B) — Four-class ASME BCI: investigation of the feasibility and comparison of two strategies for multiclassing",
-  "license": "CC0-1.0",
-  "dataset_type": "derivative",
   "resource_type_general": "Dataset",
+  "resource_type_specific": "EEG Dataset",
   "modalities": [
     "eeg"
   ],
-  "resource_type_specific": "EEG Dataset",
   "sizes": [
     "15.0 GB (181 files)"
   ],
@@ -62,35 +92,5 @@
     ".yaml",
     ".yml"
   ],
-  "description": "This dataset comprises electroencephalographic recordings from 15 healthy subjects performing auditory brain-computer interface tasks using the ASME (Auditory Stream segregation Multiclass ERP) paradigm. The study investigates two strategies for achieving four-class classification: ASME-4stream (four independent streams with single target stimuli) and ASME-2stream (two streams with dual target stimuli each). EEG data were acquired at 1000 Hz from 64 channels and analyzed using event-related potential methods and linear discriminant analysis classification, achieving accuracies of 83% and 86% respectively.",
-  "methods_description": "EEG was recorded at 1000 Hz from 64 channels using a BrainAmp system with standard 10-20 montage (EasyCap, passive Ag/AgCl electrodes, right mastoid reference). Subjects completed 12 runs alternating between ASME-4stream (4 streams, SOA=150ms, 600 stimuli/trial) and ASME-2stream (2 streams, SOA=300ms, 300 stimuli/trial) paradigms. Preprocessing included ICA-based artifact removal (15 components), bandpass filtering (1-40 Hz for ERP analysis, 0.1-8 Hz for classification), epoching (-0.1 to 1.2s), and downsampling to 250 Hz. Classification employed shrinkage-LDA with mean amplitudes from 10 non-overlapping intervals (0-1.0s) as features, evaluated via 4-fold chronological cross-validation.",
-  "keywords": [
-    {
-      "term": "Brain-Computer Interfaces",
-      "subject_scheme": "MeSH",
-      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
-    },
-    {
-      "term": "Electroencephalography",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
-    },
-    {
-      "term": "event-related potentials"
-    },
-    {
-      "term": "auditory scene analysis"
-    },
-    {
-      "term": "stream segregation"
-    },
-    {
-      "term": "P300"
-    },
-    {
-      "term": "machine learning"
-    }
-  ],
-  "source_hash": "eb790ecffc9eeec4a38a483d437aab62c1867933d9b13fd5b1726158b271659d"
+  "source_hash": "99f9be0d039677d54e0b20812b6c56430fadda641941aa2605d78048783e901e"
 }
