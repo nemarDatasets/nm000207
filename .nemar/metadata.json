@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Kojima et al. 2024 (Dataset B) — Four-class ASME BCI: investigation of the feasibility and comparison of two strategies for multiclassing",
-  "description": "This dataset comprises EEG recordings from 15 healthy subjects performing an auditory brain-computer interface task based on the ASME (Auditory Stream segregation Multiclass ERP) paradigm. The study investigates two strategies for achieving four-class classification: ASME-4stream (four independent streams with single target stimuli) and ASME-2stream (two streams with dual target stimuli each). EEG data were acquired at 1000 Hz from 64 channels and analyzed using event-related potential methods and linear discriminant analysis classification, achieving accuracies of 83% and 86% respectively.",
-  "methods_description": "EEG was recorded at 1000 Hz from 64 channels using a BrainAmp system with standard 10-20 montage referenced to right mastoid. Subjects performed 12 runs alternating between ASME-4stream and ASME-2stream paradigms, each containing 4 trials of ~90s duration. ASME-4stream presented 4 auditory streams (SOA=150ms, 600 stimuli/trial, 9:1 standard:deviant ratio), while ASME-2stream presented 2 streams with 2 deviant stimuli each (SOA=300ms, 300 stimuli/trial, 8:1:1 ratio). Preprocessing included ICA-based artifact removal, bandpass filtering (1-40 Hz for ERP analysis, 0.1-8 Hz for classification), epoching (-0.1 to 1.2s), and downsampling to 250 Hz. Classification employed shrinkage-LDA with mean amplitudes from 10 non-overlapping intervals (0-1.0s) as features, evaluated using 4-fold chronological cross-validation.",
+  "description": "This dataset comprises EEG recordings from 15 healthy subjects performing an auditory brain-computer interface task based on the ASME (Auditory Stream segregation Multiclass ERP) paradigm. The study investigates two strategies for achieving four-class classification: ASME-4stream (four independent streams with single target stimuli) and ASME-2stream (two streams with dual target stimuli each). EEG data were recorded at 1000 Hz from 64 channels and analyzed using event-related potential methods and linear discriminant analysis classification, achieving accuracies of 83% and 86% respectively.",
+  "methods_description": "EEG was recorded at 1000 Hz from 64 channels using a BrainAmp system with standard 10-20 montage (EasyCap, passive Ag/AgCl electrodes). Subjects performed 12 runs alternating between ASME-4stream (4 streams, SOA=150ms, 600 stimuli/trial) and ASME-2stream (2 streams, SOA=300ms, 300 stimuli/trial) paradigms. Preprocessing included ICA-based artifact removal (15 components), bandpass filtering (1-40 Hz for ERP analysis, 0.1-8 Hz for classification), epoching (-0.1 to 1.2s), and downsampling to 250 Hz. Classification employed shrinkage-LDA with mean amplitudes from 10 non-overlapping intervals (0-1.0s) as features, evaluated using 4-fold chronological cross-validation.",
   "license": "CC0-1.0",
   "dataset_type": "derivative",
   "authors": {
@@ -18,9 +18,7 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
     },
     {
-      "term": "Electroencephalography",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
+      "term": "electroencephalography"
     },
     {
       "term": "Event-Related Potentials, P300",
@@ -98,5 +96,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "a8f361016618bfcd1030e4c1be2bf7827c6b069f7916e95543aba7e01be940e2"
+  "source_hash": "55924db00a8701ca2ec48905ece9b7639f6ffb863c9ac32d6ddfb93c476f70bd"
 }
