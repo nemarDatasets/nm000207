@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Kojima et al. 2024 (Dataset B) — Four-class ASME BCI: investigation of the feasibility and comparison of two strategies for multiclassing",
-  "description": "EEG dataset from 15 healthy participants performing an auditory stream segregation multiclass ERP (ASME) brain-computer interface task. Two four-class strategies were compared: ASME-4stream (four streams, one target stimulus each) and ASME-2stream (two streams, two target stimuli each). Recordings comprise 64-channel EEG plus EOG during oddball target counting. Offline binary classification and BCI simulation with linear discriminant analysis yielded average accuracies of 0.83 and 0.86 for the two strategies.",
-  "methods_description": "Participants completed 12 runs alternating between ASME-4stream (SOA 0.15 s, 600 stimuli per trial) and ASME-2stream (SOA 0.3 s, 300 stimuli per trial), with 4 trials per run of about 90 s. EEG was recorded at 1000 Hz from 64 passive Ag/AgCl electrodes (BrainAmp, right mastoid reference) with horizontal and vertical EOG. Workload was assessed with the NASA-TLX questionnaire. Analysis used shrinkage-LDA on mean amplitudes from 10 intervals with chronological cross-validation.",
+  "description": "EEG recordings from 15 healthy participants performing an auditory brain-computer interface task based on the ASME (Auditory Stream segregation Multiclass ERP) paradigm. Two strategies for four-class ASME were compared: four streams with a single target stimulus each, and two streams with two target stimuli each. The dataset supports analysis of P300 responses, binary classification and BCI simulation, with average accuracies of 0.83 and 0.86 for the two strategies.",
+  "methods_description": "64-channel EEG plus two EOG channels were recorded at 1000 Hz with a BrainAmp amplifier and EasyCap passive Ag/AgCl electrodes, referenced to the right mastoid. Participants completed 12 runs alternating between the ASME-4stream and ASME-2stream paradigms, with 4 trials of about 90 s per run. They selectively attended to deviant stimuli in one stream and counted them. Workload was assessed with the NASA-TLX questionnaire. Classification used shrinkage LDA on mean amplitudes from 10 intervals.",
   "license": "CC0-1.0",
   "dataset_type": "derivative",
   "authors": {
@@ -12,9 +12,7 @@
   },
   "keywords": [
     {
-      "term": "Brain-Computer Interfaces",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
+      "term": "brain-computer interface"
     },
     {
       "term": "Electroencephalography",
@@ -22,18 +20,16 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
     },
     {
-      "term": "Event-Related Potentials, P300",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D018913"
+      "term": "event-related potential"
+    },
+    {
+      "term": "P300"
     },
     {
       "term": "auditory scene analysis"
     },
     {
       "term": "stream segregation"
-    },
-    {
-      "term": "NASA-TLX"
     }
   ],
   "related_identifiers": [
@@ -93,5 +89,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "5b56861a91c7674d9c47135bb483eaa35a0fb28746dbbb41439b0f4f07bd2a40"
+  "source_hash": "6a65fad67a4e5b33929c89195b41e84914f9405153fff7c24af822747229e3f7"
 }
